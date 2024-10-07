@@ -21,14 +21,24 @@ export const UserLogin = () => {
         </div>
         <div className="flex">
           <button
-            className="border"
+            className="border bg-blue-700 text-white"
           >
-              Login
+              SignIn
           </button>
         </div>
         <div className="flex">
-          <h6>Are you new to Typux? <span className="text-blue-700 cursor-pointer"><Link to='/signup'>Signup</Link></span></h6>
+          <h6>Are you new to Typux? <span className="text-blue-700 cursor-pointer"><Link to='/user-sign-up'>Signup</Link></span></h6>
         </div>
+        <div>
+          <label>Or</label>
+        </div>
+        <div className="flex">
+          <button
+            className="border bg-red-700 text-white"
+          >
+              Sign in with Google
+          </button>
+        </div>        
       </form>
     </>
   )

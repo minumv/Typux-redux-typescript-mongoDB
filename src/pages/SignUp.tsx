@@ -28,13 +28,24 @@ export const SignUp = () => {
         </div>
         <div className="flex">
           <button
-            className="border"
+            className="border bg-blue-700 text-white"
           >
               SignUp
           </button>
-        </div>
+        </div>        
         <div className="flex">
-          <h6>Already a member? <span className="text-blue-700 cursor-pointer"><Link to='/login'>Login</Link></span></h6>
+          <h6>Already a member? <span className="text-blue-700 cursor-pointer"><Link to='/user-sign-in'>Login</Link></span></h6>
+        </div>
+        <div>
+          <label>Or</label>
+        </div>
+        
+        <div className="flex">
+          <button
+            className="border bg-red-700 text-white"
+          >
+              Sign in with Google
+          </button>
         </div>
       </form>
     </>

@@ -1,10 +1,10 @@
 import { BrowserRouter as Router,Route, Routes } from "react-router-dom"
-import { Home } from "./components/Home"
-import { UserLogin } from "./components/UserLogin"
-import { AdminLogin } from "./components/AdminLogin"
-import Dashboard from "./components/Dashboard"
-import { SignUp } from "./components/Signup"
-import { Profile } from "./components/Profile"
+import { Home } from "./pages/Home"
+import { UserLogin } from "./pages/UserLogin"
+import { AdminLogin } from "./pages/AdminLogin"
+import Dashboard from "./pages/Dashboard"
+import { SignUp } from "./pages/SignUp"
+import { Profile } from "./pages/Profile"
 
 const App = () => {
   return (
@@ -12,9 +12,9 @@ const App = () => {
     <Router>
     <Routes>
       <Route path='/' element={<Home />}/>
-      <Route path='/login' element={<UserLogin />}/>      
-      <Route path='/signup' element={<SignUp />}/>      
-      <Route path='/adminlogin' element={<AdminLogin />}/>
+      <Route path='/user-sign-in' element={<UserLogin />}/>      
+      <Route path='/user-sign-up' element={<SignUp />}/>      
+      <Route path='/admin-sign-in' element={<AdminLogin />}/>
       <Route path='/dashboard' element={<Dashboard />}/>      
       <Route path='/profile' element={<Profile />}/>
     </Routes>
